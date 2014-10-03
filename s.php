@@ -86,7 +86,7 @@ function PositionAdd(){
 
             mysql_query("INSERT INTO shortorders VALUES('$posid','$pos',0,0,0,'$account','$time') ON DUPLICATE KEY UPDATE position = '$pos'");
             if(mysql_error()){
-                echo "[EROO]";
+                echo "[ER]";
                 die();
             };
 
